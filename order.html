@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Order a custom cake from Couzens Bakery online. We can also arrange assistance loading your order into your vehicle." />
+  <title>Order a Cake — Couzens Bakery & Coffee Lounge</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Lora&family=Raleway:wght@400;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <a class="skip-link" href="#main">Skip to main content</a>
+
+  <div class="a11y-bar" role="toolbar" aria-label="Text size controls">
+    <div class="container">
+      <span>Text size:</span>
+      <button class="font-btn" data-action="decrease" aria-label="Decrease text size">A−</button>
+      <button class="font-btn" data-action="reset"    aria-label="Reset text size">A</button>
+      <button class="font-btn" data-action="increase" aria-label="Increase text size">A+</button>
+    </div>
+  </div>
+
+  <nav class="navbar" aria-label="Main navigation">
+    <div class="container">
+      <a href="index.html" class="nav-logo" aria-label="Couzens Bakery home">
+        Couzens
+        <span>Bakery &amp; Coffee Lounge</span>
+      </a>
+      <button class="nav-toggle" aria-expanded="false" aria-controls="nav-links" aria-label="Toggle navigation menu">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links" id="nav-links" role="list">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="menu.html">Menu</a></li>
+        <li><a href="info.html">Find Us</a></li>
+        <li><a href="order.html" class="btn btn-primary active">Order a Cake</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <main id="main">
+
+    <div class="page-hero">
+      <div class="container">
+        <span class="section-label">Custom Orders</span>
+        <h1>Order a Cake</h1>
+        <p>Order online and we'll have it ready for collection. Need help loading it into your vehicle? Just let us know.</p>
+      </div>
+    </div>
+
+    <section class="section">
+      <div class="container">
+
+        <div class="features-grid mb-2">
+          <article class="card">
+            <div class="card-body text-center">
+              <span class="card-icon" aria-hidden="true">🎂</span>
+              <h3>Custom Cakes</h3>
+              <p>Choose your size, flavour and any special decoration requirements. We'll bake it fresh for your collection date.</p>
+            </div>
+          </article>
+          <article class="card">
+            <div class="card-body text-center">
+              <span class="card-icon" aria-hidden="true">🚗</span>
+              <h3>Vehicle Assistance</h3>
+              <p>Need help carrying your cake to your car? Tick the box below and our staff will be happy to assist you.</p>
+            </div>
+          </article>
+          <article class="card">
+            <div class="card-body text-center">
+              <span class="card-icon" aria-hidden="true">📅</span>
+              <h3>48 Hours Notice</h3>
+              <p>Please order at least 48 hours in advance so we have time to prepare your cake to the highest standard.</p>
+            </div>
+          </article>
+        </div>
+
+        <div class="form-card">
+          <h2 style="margin-bottom:1.5rem;">Your Order Details</h2>
+
+          <form id="order-form" novalidate>
+
+            <div class="form-row">
+              <div class="form-group">
+                <label for="name">Full Name <span aria-hidden="true">*</span></label>
+                <input
+                  type="text"
+                  id="name"
+                  name="name"
+                  required
+                  autocomplete="name"
+                  placeholder="Your full name" />
+              </div>
+              <div class="form-group">
+                <label for="email">Email Address <span aria-hidden="true">*</span></label>
+                <input
+                  type="email"
+                  id="email"
+                  name="email"
+                  required
+                  autocomplete="email"
+                  placeholder="your@email.com" />
+              </div>
+            </div>
+
+            <div class="form-row">
+              <div class="form-group">
+                <label for="phone">Phone Number</label>
+                <input
+                  type="tel"
+                  id="phone"
+                  name="phone"
+                  autocomplete="tel"
+                  placeholder="07700 000000" />
+              </div>
+              <div class="form-group">
+                <label for="branch">Collection Branch <span aria-hidden="true">*</span></label>
+                <select id="branch" name="branch" required>
+                  <option value="">Select branch</option>
+                  <option value="hatfield">Hatfield</option>
+                  <option value="harlow">Harlow</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="form-row">
+              <div class="form-group">
+                <label for="cake-type">Cake Type <span aria-hidden="true">*</span></label>
+                <select id="cake-type" name="cake-type" required>
+                  <option value="">Select a cake</option>
+                  <option value="victoria">Victoria Sponge</option>
+                  <option value="chocolate">Chocolate Fudge Cake</option>
+                  <option value="lemon">Lemon Drizzle</option>
+                  <option value="coffee-walnut">Coffee &amp; Walnut</option>
+                  <option value="carrot">Carrot Cake</option>
+                  <option value="custom">Custom / Other</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label for="cake-size">Cake Size <span aria-hidden="true">*</span></label>
+                <select id="cake-size" name="cake-size" required>
+                  <option value="">Select size</option>
+                  <option value="small">Small — serves 8 (£22)</option>
+                  <option value="medium">Medium — serves 16 (£38)</option>
+                  <option value="large">Large — serves 24 (£55)</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="collection-date">Collection Date <span aria-hidden="true">*</span></label>
+              <input
+                type="date"
+                id="collection-date"
+                name="collection-date"
+                required />
+            </div>
+
+            <div class="form-group">
+              <label for="message">Special Requests or Decoration Notes</label>
+              <textarea
+                id="message"
+                name="message"
+                placeholder="E.g. Happy Birthday Sarah, nut-free please, specific colours...">
+              </textarea>
+            </div>
+
+            <div class="form-group">
+              <label style="display:flex; align-items:flex-start; gap:0.75rem; cursor:pointer; font-weight:400;">
+                <input
+                  type="checkbox"
+                  id="vehicle-assist"
+                  name="vehicle-assist"
+                  style="width:auto; margin-top:0.2rem;"
+                  aria-describedby="vehicle-assist-desc" />
+                <span>
+                  <strong>I would like assistance loading my order into my vehicle</strong>
+                  <span id="vehicle-assist-desc" style="display:block; font-size:0.85rem; color:var(--text-muted); margin-top:0.2rem;">
+                    A member of staff will help you carry and load your cake safely.
+                  </span>
+                </span>
+              </label>
+            </div>
+
+            <button type="submit" class="btn btn-primary">Place Order</button>
+
+            <div id="success-msg" class="success-msg" role="alert" aria-live="polite">
+              ✅ Thank you! Your order has been received. We will contact you within 24 hours to confirm.
+            </div>
+
+          </form>
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer" role="contentinfo">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <h4>Couzens Bakery &amp; Coffee Lounge</h4>
+          <p>Your local bakery serving freshly baked goods and great coffee across Hatfield and Harlow.</p>
+        </div>
+        <div>
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="menu.html">Menu</a></li>
+            <li><a href="info.html">Find Us</a></li>
+            <li><a href="order.html">Order a Cake</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Follow Us</h4>
+          <ul>
+            <li><a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer">Facebook</a></li>
+            <li><a href="https://www.tripadvisor.co.uk" target="_blank" rel="noopener noreferrer">TripAdvisor</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 Couzens Bakery &amp; Coffee Lounge. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
