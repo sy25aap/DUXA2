@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="View the full Couzens Bakery menu including allergen information, specials and prices." />
+  <title>Menu — Couzens Bakery & Coffee Lounge</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Lora&family=Raleway:wght@400;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <a class="skip-link" href="#main">Skip to main content</a>
+
+  <div class="a11y-bar" role="toolbar" aria-label="Text size controls">
+    <div class="container">
+      <span>Text size:</span>
+      <button class="font-btn" data-action="decrease" aria-label="Decrease text size">A−</button>
+      <button class="font-btn" data-action="reset"    aria-label="Reset text size">A</button>
+      <button class="font-btn" data-action="increase" aria-label="Increase text size">A+</button>
+    </div>
+  </div>
+
+  <nav class="navbar" aria-label="Main navigation">
+    <div class="container">
+      <a href="index.html" class="nav-logo" aria-label="Couzens Bakery home">
+        Couzens
+        <span>Bakery &amp; Coffee Lounge</span>
+      </a>
+      <button class="nav-toggle" aria-expanded="false" aria-controls="nav-links" aria-label="Toggle navigation menu">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links" id="nav-links" role="list">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="menu.html" class="active">Menu</a></li>
+        <li><a href="info.html">Find Us</a></li>
+        <li><a href="order.html" class="btn btn-primary">Order a Cake</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <main id="main">
+
+    <div class="page-hero">
+      <div class="container">
+        <span class="section-label">Updated Daily</span>
+        <h1>Our Menu</h1>
+        <p>All prices include VAT. Allergens are clearly labelled on every item.</p>
+      </div>
+    </div>
+
+    <section class="section">
+      <div class="container">
+
+        <div class="tag-legend" role="note" aria-label="Allergen key">
+          <span>Allergen key:</span>
+          <span class="badge badge-nut">🥜 Contains Nuts</span>
+          <span class="badge badge-dairy">🥛 Contains Dairy</span>
+          <span class="badge badge-gluten">🌾 Contains Gluten</span>
+          <span class="badge badge-vegan">🌱 Vegan</span>
+          <span class="badge badge-special">★ Special</span>
+        </div>
+
+        <div class="menu-filter" role="group" aria-label="Filter menu items">
+          <button class="filter-btn active" data-filter="all">All Items</button>
+          <button class="filter-btn" data-filter="special">★ Specials</button>
+          <button class="filter-btn" data-filter="vegan">🌱 Vegan</button>
+          <button class="filter-btn" data-filter="nut">🥜 Nut-Free</button>
+          <button class="filter-btn" data-filter="hot-drinks">Hot Drinks</button>
+          <button class="filter-btn" data-filter="cold-drinks">Cold Drinks</button>
+          <button class="filter-btn" data-filter="food">Food</button>
+          <button class="filter-btn" data-filter="cakes">Cakes</button>
+        </div>
+
+        <div class="menu-section" id="specials">
+          <h2>★ This Week's Specials</h2>
+          <div class="menu-grid">
+
+            <article class="menu-item" data-tags="special,food,dairy,gluten">
+              <div class="menu-item-info">
+                <div class="menu-item-name">Smoked Salmon Bagel</div>
+                <div class="menu-item-desc">Toasted bagel with cream cheese, smoked salmon and capers.</div>
+                <span class="badge badge-special">★ Special</span>
+                <span class="badge badge-dairy">🥛 Dairy</span>
+                <span class="badge badge-gluten">🌾 Gluten</span>
+              </div>
+              <div class="menu-item-price">£5.95</div>
+            </article>
+
+            <article class="menu-item" data-tags="special,cakes,dairy,nut">
+              <div class="menu-item-info">
+                <div class="menu-item-name">Hazelnut Praline Slice</div>
+                <div class="menu-item-desc">Layered chocolate sponge with hazelnut praline buttercream.</div>
+                <span class="badge badge-special">★ Special</span>
+                <span class="badge badge-nut">🥜 Nuts</span>
+                <span class="badge badge-dairy">🥛 Dairy</span>
+              </div>
+              <div class="menu-item-price">£3.50</div>
+            </article>
+
+            <article class="menu-item" data-tags="special,hot-drinks,dairy,vegan">
+              <div class="menu-item-info">
+                <div class="menu-item-name">Lavender Oat Latte</div>
+                <div class="menu-item-desc">Espresso with steamed oat milk and house lavender syrup. Can be made vegan.</div>
+                <span class="badge badge-special">★ Special</span>
+                <span class="badge badge-vegan">🌱 Vegan option</span>
+              </div>
+              <div class="menu-item-price">£3.80</div>
+            </article>
+
+          </div>
+        </div>
+
+        <div class="menu-section">
+          <h2>☕ Hot Drinks</h2>
+          <div class="menu-grid">
+
+            <article class="menu-item" data-tags="hot-drinks,dairy">
+              <div class="menu-item-info">
+                <div class="menu-item-name">Flat White</div>
+                <div class="menu-item-desc">Double espresso with velvety steamed milk.</div>
+                <span class="badge badge-dairy">🥛 Dairy</span>
+              </div>
+              <div class="menu-item-price">£3.20</div>
+            </article>
+
+            <article class="menu-item" data-tags="hot-drinks,dairy">
+              <div class="menu-item-info">
+                <div class="menu-item-name">Cappuccino</div>
+                <div class="menu-item-desc">Espresso topped with steamed milk and thick foam.</div>
+                <span class="badge badge-dairy">🥛 Dairy</span>
+              </div>
+              <div class="menu-item-price">£3.00</div>
+            </article>
+
+            <article class="menu-item" data-tags="hot-drinks,vegan">
+              <div class="menu-item-info">
+                <div class="menu-item-name">Americano</div>
+                <div class="menu-item-desc">Espresso shots with hot water. Rich and smooth.</div>
+                <span class="badge badge-vegan">🌱 Vegan</span>
+              </div>
+              <div class="menu-item-price">£2.60</div>
+            </article>
+
+            <article class="menu-item" data-tags="hot-drinks,dairy">
+              <div class="menu-item-info">
+                <div class="menu-item-name">Latte</div>
+                <div class="menu-item-desc">Espresso with lots of steamed milk and light foam.</div>
+                <span class="badge badge-dairy">🥛 Dairy</span>
+              </div>
+              <div class="menu-item-price">£3.20</div>
+            </article>
+
+            <article class="menu-item" data-tags="hot-drinks,dairy">
+              <div class="menu-item-info">
+                <div class="menu-item-name">Hot Chocolate</div>
+                <div class="menu-item-desc">Rich Belgian chocolate with steamed milk and cream.</div>
+                <span class="badge badge-dairy">🥛 Dairy</span>
+              </div>
+              <div class="menu-item-price">£3.40</div>
+            </article>
+
+            <article class="menu-item" data-tags="hot-drinks,vegan">
+              <div class="menu-item-info">
+                <div class="menu-item-name">English Breakfast Tea</div>
+                <div class="menu-item-desc">Classic breakfast tea served with milk on the side.</div>
+                <span class="badge badge-vegan">🌱 Vegan</span>
+              </div>
+              <div class="menu-item-price">£2.20</div>
+            </article>
+
+          </div>
+        </div>
+
+        <div class="menu-section">
+          <h2>🧊 Cold Drinks</h2>
+          <div class="menu-grid">
+
+            <article class="menu-item" data-tags="cold-drinks,dairy">
+              <div class="menu-item-info">
+                <div class="menu-item-name">Iced Latte</div>
+                <div class="menu-item-desc">Espresso over ice with cold milk.</div>
+                <span class="badge badge-dairy">🥛 Dairy</span>
+              </div>
+              <div class="menu-item-price">£3.50</div>
+            </article>
+
+            <article class="menu-item" data-tags="cold-drinks,dairy">
+              <div class="menu-item-info">
+                <div class="menu-item-name">Milkshake</div>
+                <div class="menu-item-desc">Choose from vanilla, strawberry or chocolate.</div>
+                <span class="badge badge-dairy">🥛 Dairy</span>
+              </div>
+              <div class="menu-item-price">£3.80</div>
+            </article>
+
+            <article class="menu-item" data-tags="cold-drinks,vegan">
+              <div class="menu-item-info">
+                <div class="menu-item-name">Fresh Orange Juice</div>
+                <div class="menu-item-desc">Freshly squeezed orange juice.</div>
+                <span class="badge badge-vegan">🌱 Vegan</span>
+              </div>
+              <div class="menu-item-price">£2.80</div>
+            </article>
+
+          </div>
+        </div>
+
+        <div class="menu-section">
+          <h2>🥪 Food</h2>
+          <div class="menu-grid">
+
+            <article class="menu-item" data-tags="food,gluten,dairy">
+              <div class="menu-item-info">
+                <div class="menu-item-name">Cheese &amp; Ham Roll</div>
+                <div class="menu-item-desc">Freshly baked roll with mature cheddar and honey-roast ham.</div>
+                <span class="badge badge-gluten">🌾 Gluten</span>
+                <span class="badge badge-dairy">🥛 Dairy</span>
+              </div>
+              <div class="menu-item-price">£3.50</div>
+            </article>
+
+            <article class="menu-item" data-tags="food,gluten,vegan">
+              <div class="menu-item-info">
+                <div class="menu-item-name">Vegan Hummus Wrap</div>
+                <div class="menu-item-desc">Houmous, roasted peppers and mixed leaves in a wholegrain wrap.</div>
+                <span class="badge badge-vegan">🌱 Vegan</span>
+                <span class="badge badge-gluten">🌾 Gluten</span>
+              </div>
+              <div class="menu-item-price">£4.20</div>
+            </article>
+
+            <article class="menu-item" data-tags="food,gluten,dairy">
+              <div class="menu-item-info">
+                <div class="menu-item-name">BLT Sandwich</div>
+                <div class="menu-item-desc">Bacon, lettuce and tomato on thick white bread with mayo.</div>
+                <span class="badge badge-gluten">🌾 Gluten</span>
+                <span class="badge badge-dairy">🥛 Dairy</span>
+              </div>
+              <div class="menu-item-price">£3.80</div>
+            </article>
+
+            <article class="menu-item" data-tags="food,gluten">
+              <div class="menu-item-info">
+                <div class="menu-item-name">Sausage Roll</div>
+                <div class="menu-item-desc">Buttery puff pastry wrapped around seasoned pork sausage meat.</div>
+                <span class="badge badge-gluten">🌾 Gluten</span>
+              </div>
+              <div class="menu-item-price">£2.50</div>
+            </article>
+
+            <article class="menu-item" data-tags="food,gluten,dairy">
+              <div class="menu-item-info">
+                <div class="menu-item-name">Toasted Teacake</div>
+                <div class="menu-item-desc">Toasted fruited teacake served with butter.</div>
+                <span class="badge badge-gluten">🌾 Gluten</span>
+                <span class="badge badge-dairy">🥛 Dairy</span>
+              </div>
+              <div class="menu-item-price">£2.20</div>
+            </article>
+
+            <article class="menu-item" data-tags="food,gluten,dairy">
+              <div class="menu-item-info">
+                <div class="menu-item-name">Cheese Scone</div>
+                <div class="menu-item-desc">Freshly baked cheese scone served warm with butter.</div>
+                <span class="badge badge-gluten">🌾 Gluten</span>
+                <span class="badge badge-dairy">🥛 Dairy</span>
+              </div>
+              <div class="menu-item-price">£2.40</div>
+            </article>
+
+          </div>
+        </div>
+
+        <div class="menu-section">
+          <h2>🎂 Cakes &amp; Pastries</h2>
+          <div class="menu-grid">
+
+            <article class="menu-item" data-tags="cakes,gluten,dairy,nut">
+              <div class="menu-item-info">
+                <div class="menu-item-name">Almond Croissant</div>
+                <div class="menu-item-desc">Buttery croissant filled with almond frangipane and topped with flaked almonds.</div>
+                <span class="badge badge-nut">🥜 Nuts</span>
+                <span class="badge badge-gluten">🌾 Gluten</span>
+                <span class="badge badge-dairy">🥛 Dairy</span>
+              </div>
+              <div class="menu-item-price">£2.80</div>
+            </article>
+
+            <article class="menu-item" data-tags="cakes,gluten,dairy">
+              <div class="menu-item-info">
+                <div class="menu-item-name">Victoria Sponge Slice</div>
+                <div class="menu-item-desc">Classic sponge with strawberry jam and vanilla buttercream.</div>
+                <span class="badge badge-gluten">🌾 Gluten</span>
+                <span class="badge badge-dairy">🥛 Dairy</span>
+              </div>
+              <div class="menu-item-price">£3.00</div>
+            </article>
+
+            <article class="menu-item" data-tags="cakes,gluten,dairy">
+              <div class="menu-item-info">
+                <div class="menu-item-name">Chocolate Fudge Cake</div>
+                <div class="menu-item-desc">Rich chocolate sponge with chocolate fudge icing.</div>
+                <span class="badge badge-gluten">🌾 Gluten</span>
+                <span class="badge badge-dairy">🥛 Dairy</span>
+              </div>
+              <div class="menu-item-price">£3.20</div>
+            </article>
+
+            <article class="menu-item" data-tags="cakes,gluten,vegan">
+              <div class="menu-item-info">
+                <div class="menu-item-name">Vegan Banana Bread</div>
+                <div class="menu-item-desc">Moist banana bread made without dairy or eggs.</div>
+                <span class="badge badge-vegan">🌱 Vegan</span>
+                <span class="badge badge-gluten">🌾 Gluten</span>
+              </div>
+              <div class="menu-item-price">£2.60</div>
+            </article>
+
+            <article class="menu-item" data-tags="cakes,gluten,dairy">
+              <div class="menu-item-info">
+                <div class="menu-item-name">Lemon Drizzle</div>
+                <div class="menu-item-desc">Zesty lemon sponge with a sticky lemon glaze.</div>
+                <span class="badge badge-gluten">🌾 Gluten</span>
+                <span class="badge badge-dairy">🥛 Dairy</span>
+              </div>
+              <div class="menu-item-price">£2.80</div>
+            </article>
+
+            <article class="menu-item" data-tags="cakes,gluten,dairy,nut">
+              <div class="menu-item-info">
+                <div class="menu-item-name">Walnut &amp; Coffee Cake</div>
+                <div class="menu-item-desc">Coffee sponge with walnut pieces and coffee buttercream.</div>
+                <span class="badge badge-nut">🥜 Nuts</span>
+                <span class="badge badge-gluten">🌾 Gluten</span>
+                <span class="badge badge-dairy">🥛 Dairy</span>
+              </div>
+              <div class="menu-item-price">£3.00</div>
+            </article>
+
+          </div>
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer" role="contentinfo">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <h4>Couzens Bakery &amp; Coffee Lounge</h4>
+          <p>Your local bakery serving freshly baked goods and great coffee across Hatfield and Harlow.</p>
+        </div>
+        <div>
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="menu.html">Menu</a></li>
+            <li><a href="info.html">Find Us</a></li>
+            <li><a href="order.html">Order a Cake</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Follow Us</h4>
+          <ul>
+            <li><a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer">Facebook</a></li>
+            <li><a href="https://www.tripadvisor.co.uk" target="_blank" rel="noopener noreferrer">TripAdvisor</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 Couzens Bakery &amp; Coffee Lounge. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
