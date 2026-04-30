@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Couzens Bakery and Coffee Lounge — freshly baked goods and great coffee in Hatfield and Harlow." />
+  <title>Couzens Bakery & Coffee Lounge</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Lora&family=Raleway:wght@400;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <a class="skip-link" href="#main">Skip to main content</a>
+
+  <div class="a11y-bar" role="toolbar" aria-label="Text size controls">
+    <div class="container">
+      <span>Text size:</span>
+      <button class="font-btn" data-action="decrease" aria-label="Decrease text size">A−</button>
+      <button class="font-btn" data-action="reset"    aria-label="Reset text size">A</button>
+      <button class="font-btn" data-action="increase" aria-label="Increase text size">A+</button>
+    </div>
+  </div>
+
+  <nav class="navbar" aria-label="Main navigation">
+    <div class="container">
+      <a href="index.html" class="nav-logo" aria-label="Couzens Bakery home">
+        Couzens
+        <span>Bakery &amp; Coffee Lounge</span>
+      </a>
+      <button class="nav-toggle" aria-expanded="false" aria-controls="nav-links" aria-label="Toggle navigation menu">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links" id="nav-links" role="list">
+        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="menu.html">Menu</a></li>
+        <li><a href="info.html">Find Us</a></li>
+        <li><a href="order.html" class="btn btn-primary">Order a Cake</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <main id="main">
+
+    <section class="hero" aria-labelledby="hero-heading">
+      <div class="container">
+        <div class="hero-content">
+          <span class="section-label">Hatfield &amp; Harlow</span>
+          <h1 id="hero-heading">Baked Fresh,<br>Every Morning</h1>
+          <p>Your local bakery and coffee lounge serving handcrafted pastries, sandwiches, cakes, and specialty coffee since day one.</p>
+          <div class="hero-badges" aria-label="Highlights">
+            <span class="hero-badge">⭐ 4.5 Star Rated</span>
+            <span class="hero-badge">☕ Specialty Coffee</span>
+            <span class="hero-badge">🎂 Custom Cakes</span>
+            <span class="hero-badge">🌱 Vegan Options</span>
+          </div>
+          <div class="hero-ctas">
+            <a href="menu.html" class="btn btn-primary">View Our Menu</a>
+            <a href="info.html" class="btn btn-outline">Opening Hours</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--alt" aria-labelledby="features-heading">
+      <div class="container">
+        <div class="text-center mb-2">
+          <span class="section-label">Why Choose Us</span>
+          <h2 id="features-heading">Everything You Need</h2>
+        </div>
+        <div class="features-grid">
+
+          <article class="card">
+            <div class="card-body text-center">
+              <span class="card-icon" aria-hidden="true">🍞</span>
+              <h3>Freshly Baked Daily</h3>
+              <p>All our bread, pastries and cakes are baked fresh every morning at both our Hatfield and Harlow branches.</p>
+            </div>
+          </article>
+
+          <article class="card">
+            <div class="card-body text-center">
+              <span class="card-icon" aria-hidden="true">☕</span>
+              <h3>Specialty Coffee</h3>
+              <p>From flat whites to lattes, our baristas craft every cup with care using quality beans and fresh milk.</p>
+            </div>
+          </article>
+
+          <article class="card">
+            <div class="card-body text-center">
+              <span class="card-icon" aria-hidden="true">🎂</span>
+              <h3>Custom Cake Orders</h3>
+              <p>Planning a party? Order a custom cake online and we can arrange assistance loading it into your vehicle.</p>
+              <a href="order.html" class="btn btn-outline mt-2">Order Now</a>
+            </div>
+          </article>
+
+          <article class="card">
+            <div class="card-body text-center">
+              <span class="card-icon" aria-hidden="true">🌿</span>
+              <h3>Allergy Information</h3>
+              <p>All menu items are clearly labelled with allergens including nuts, dairy and gluten so you can eat safely.</p>
+              <a href="menu.html" class="btn btn-outline mt-2">See Menu</a>
+            </div>
+          </article>
+
+          <article class="card">
+            <div class="card-body text-center">
+              <span class="card-icon" aria-hidden="true">♿</span>
+              <h3>Accessible for Everyone</h3>
+              <p>Both branches have step-free access. Our website supports keyboard navigation and adjustable text sizes.</p>
+            </div>
+          </article>
+
+          <article class="card">
+            <div class="card-body text-center">
+              <span class="card-icon" aria-hidden="true">📍</span>
+              <h3>Two Locations</h3>
+              <p>Find us in Hatfield and Harlow. Check opening times, addresses and get directions from our Find Us page.</p>
+              <a href="info.html" class="btn btn-outline mt-2">Find Us</a>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <section class="section" aria-labelledby="specials-heading">
+      <div class="container text-center">
+        <span class="section-label">This Week</span>
+        <h2 id="specials-heading">Weekly Specials</h2>
+        <p>Don't miss our rotating specials — available in store and clearly marked on the menu with a ★ badge.</p>
+        <a href="menu.html#specials" class="btn btn-primary">View Specials on Menu</a>
+      </div>
+    </section>
+
+    <section class="section section--alt" aria-labelledby="branches-heading">
+      <div class="container">
+        <div class="text-center mb-2">
+          <span class="section-label">Visit Us</span>
+          <h2 id="branches-heading">Our Two Branches</h2>
+        </div>
+        <div class="branches-grid">
+          <div class="branch-card">
+            <h3>📍 Hatfield Branch</h3>
+            <ul class="branch-info-list">
+              <li><span class="icon" aria-hidden="true">🏠</span> 72–74 Haldens, Welwyn Garden City, AL7</li>
+              <li><span class="icon" aria-hidden="true">📞</span> <a href="tel:01707390024">01707 390024</a></li>
+              <li><span class="icon" aria-hidden="true">🕗</span> Mon–Sat: 07:30–17:00 &nbsp;|&nbsp; Sun: Closed</li>
+            </ul>
+            <a href="info.html" class="btn btn-outline mt-2">Get Directions</a>
+          </div>
+          <div class="branch-card">
+            <h3>📍 Harlow Branch</h3>
+            <ul class="branch-info-list">
+              <li><span class="icon" aria-hidden="true">🏠</span> The Water Gardens, Harlow, CM20</li>
+              <li><span class="icon" aria-hidden="true">📞</span> <a href="tel:01279123456">01279 123456</a></li>
+              <li><span class="icon" aria-hidden="true">🕗</span> Mon–Sat: 07:30–17:00 &nbsp;|&nbsp; Sun: Closed</li>
+            </ul>
+            <a href="info.html" class="btn btn-outline mt-2">Get Directions</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer" role="contentinfo">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <h4>Couzens Bakery &amp; Coffee Lounge</h4>
+          <p>Your local bakery serving freshly baked goods and great coffee across Hatfield and Harlow.</p>
+        </div>
+        <div>
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="menu.html">Menu</a></li>
+            <li><a href="info.html">Find Us</a></li>
+            <li><a href="order.html">Order a Cake</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Follow Us</h4>
+          <ul>
+            <li><a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer">Facebook</a></li>
+            <li><a href="https://www.tripadvisor.co.uk" target="_blank" rel="noopener noreferrer">TripAdvisor</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 Couzens Bakery &amp; Coffee Lounge. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
